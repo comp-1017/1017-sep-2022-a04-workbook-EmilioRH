@@ -26,9 +26,93 @@
         -->
 
         <h1>Basic HTML Tags</h1>
+        <h3>Paragraph Tag</h3>
         <p>This page demonstrates the basic structure of an html webpage. The head area has the browser
             title tab specify as well as the charset defined. The body is demonstrating the h1 header tag
             and the paragraph tag.
         </p>
+
+        <h3>List Tags: gt; lt; </h3>
+
+        <!--
+              Block Tag    
+             To create and order list that is(ordered) list use ol 
+             to create an unordered list use ql, items in the list will be out of order
+        -->
+
+        <ol>
+            <li>Add extension Live Server for Go Live execitopm free VSC</li>
+            <li> Open extension using & icon on left by </li> 
+            <li> either search for Live Server or select it in List</li>
+            <li>press install</li>
+            <li>To use</li>
+                <ol> 
+                    <li>open an html page</li>
+                    <li>adjustments</li>
+                </ol>
+        </ol>
+        <ql>
+            <li>this is an unordered List</li>
+            <li>default dispay is bulleted list</li>
+            <li>we will see later how to remove these bullets using css stylying</li>
+        </ql>
+
+        <h3>Anchor Tag (aka linking to another page)</h3>
+        <!--
+            This is an anchor tag and is incorrectly often referred to as the link tag
+            One should not use the link tag because there is actually a "link tag"
+                used in the head section
+            The Anchor Tag can take you to a different location whether it be on a 
+                different website, different page in the current website or a 
+                different location on the current page
+
+            Parameters:
+            href: points to the desired location
+            target: indicates the browser page display option
+                    default is same displaye page tab 
+                    _blank will open a new browser tab (page)
+        -->
+
+        <a href="https://www.nait.ca" target="_blank">go to nait</a>
+
+        <h3>image tag</h3>
+        <!--
+            image tag does not have a closing tag
+            the image tag has no content, however it does parameters
+
+            parameters:
+            src="relative web site location"
+            alt="principle text if the image is not found at src"
+            [title="tool tip text for the image"]
+            
+            absolute addresing is a complete fixed file path
+                that includes your drive:/folder/.../folder/file
+            relative address begins at a specified point
+            for website, it is considered top of the website
+            refrence to the desired file is done by specifying
+                the appropiate folder path to the desired file
+            NO drive
+
+            movement within a relative address
+                if only the file name is given, the location is within
+                the same folder
+            movement down the file structure is by /foldername
+            movement up the file structure is by using .. for each 
+                folder level to ascend
+
+            same folder
+            ="filename.ext"
+
+            lower folder
+            ="nextleveldownfoldername/nextleveldownfoldername/.../filename.ext"
+
+            from one lower folder to another lower folder on a different branch
+                .. for each level that leads to the ascendant
+            ="../../../nextleveldownfoldername/filename.ext"
+        -->
+        <a href="https://www.facebook.com" target="_blank">
+            <img src="img/image-1.jpg" alt="logo facebook"
+            title="a logo image of facebook">
+        </a>
     </body>
 </html>
