@@ -24,15 +24,27 @@
 
             paragraph tag p: this tag in indicates the content to be a paragraph
         -->
-
+        <header>
         <h1>Basic HTML Tags</h1>
-        <h3>Paragraph Tag</h3>
+        <nav>
+            <h3>Nav tags title are optional</h3>
+            <ol>
+                <li><a href="basic-naviation">Home</a></li>
+                <li><a href="../semantics-tags/">Semantics</a></li>
+                <li><a href="#">HTML Basics</a></li>
+            </ol>
+        </nav>    
+        </header>
+        <main>
+            <section>
+            <h2>Paragraph Tag</h2>
         <p>This page demonstrates the basic structure of an html webpage. The head area has the browser
             title tab specify as well as the charset defined. The body is demonstrating the h1 header tag
             and the paragraph tag.
         </p>
-
-        <h3>List Tags: gt; lt; </h3>
+            </section>
+            <section>
+        <h2>List Tags: gt; lt; </h2>
 
         <!--
               Block Tag    
@@ -57,7 +69,9 @@
             <li>default dispay is bulleted list</li>
             <li>we will see later how to remove these bullets using css stylying</li>
         </ul>
-        <h3>Anchor Tag (aka linking to another page)</h3>
+            </section>
+            <section>
+        <h2>Anchor Tag (aka linking to another page)</h2>
         <!--
             This is an anchor tag and is incorrectly often referred to as the link tag
             One should not use the link tag because there is actually a "link tag"
@@ -75,7 +89,7 @@
 
         <a href="https://www.nait.ca" target="_blank">go to nait</a>
 
-        <h3>image tag</h3>
+        <h2>image tag</h2>
         <!--
             image tag does not have a closing tag
             the image tag has no content, however it does parameters
@@ -111,8 +125,10 @@
             ="../../../nextleveldownfoldername/filename.ext"
         -->
         <a href="https://www.facebook.com" target="_blank">
-            <img src="img/image-1.jpg" alt="logo facebook"
+            <img src="../img/image-1.jpg" alt="logo facebook"
             title="a logo image of facebook">
         </a>
+        </section>
+        </main>
     </body>
 </html>
