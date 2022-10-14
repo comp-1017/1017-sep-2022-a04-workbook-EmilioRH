@@ -1,0 +1,60 @@
+footer{
+    background-color: #333;
+    color: yellow;
+}
+/* We can specify multiple selectors separated by commas for a single declaration */
+footer,
+footer a{
+    color: white;
+}
+/* We can specify any number of descendants; the following rule applies to any li elements that are descendants of ul elements, which are 
+themselves descendants of nav elements */
+nav ul{
+    background-color: #ddd;
+}
+nav ul li{
+    border-bottom: 1px solid #333;
+}
+nav ul li a{
+    color: #333;
+    text-decoration: none;
+}
+/* Pseudo classes allow us to target elements in specific states, positions, etc. In this case, we are targeting a elements in the hover state */
+nav ul li a:hover{
+    color: blue;
+    font-weight: bold;
+    font-size: larger;
+}
+nav ul li a:active{
+    color: red;
+}
+/* Class slectors can be used to be more specific when selecting elements and have a HIGHER priority than simple element selectors alone */
+ul.navigation{
+    list-style: none;
+    padding-left: 0;
+}
+/* 
+to remove the underlying of an anchor tag: text-decoration: none; 
+change the text color of the anchor tag to #333
+*/
+/* Classes
+types: user (targetted classes
+        pseudo classes, these are attach to elemets
+
+        anchor tag has several psuedo classes
+        NOTE: the order in which you code your psuedo classes for the anchor is EXTREMELY IMPORTANT
+
+    a:link unused link
+    a:hover used when your cursor hovers over the anchor tag link
+    a:visited used when the anchor tag link has been clicked on previously
+    a:active used when you are actually clicking the link
+*/
+.bulletremoval{
+    list-style-type: none;
+    padding: 0px;
+}
+
+nav ul.bulletremoval{
+    list-style-type: square;
+    padding: 10px;
+}
