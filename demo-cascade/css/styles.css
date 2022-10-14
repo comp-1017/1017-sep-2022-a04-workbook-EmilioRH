@@ -58,3 +58,12 @@ nav ul.bulletremoval{
     list-style-type: square;
     padding: 10px;
 }
+/* targeted class
+    elemnt.classname
+*/
+/* child selectors
+this is an alement selector within another element that is NOT necessarily directly below
+the parent element selector */
+main p{
+    font-style: italic;
+}
