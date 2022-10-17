@@ -1,0 +1,28 @@
+/***
+Margin: the outer most part of the box
+        represents separation between boxes
+        horizontal margins are added together
+        vertical margins are collapsed
+                If the vertical margins are positive then
+                the larger of the two margins are used
+Margin can be coded in various styles
+long hand: margin-top: size, margin-right: size, margin-left: size, margin-bottom: size
+equal opposite sides: margin: tb rl;
+short hand unequal: margin: t r b l;
+short hand equal: margin: size; 
+***/
+.margin-section{
+    margin: 24px 12px 24px 12px;
+}
+.border-section {
+    border: 3px solid black;
+}
+.padding-section {
+    padding: 24px;
+}
+.width-section {
+    width: 300px;
+    margin: 24px;
+    padding: 24px;
+    border: 3px solid black;
+}
