@@ -1,0 +1,113 @@
+body {
+    background: rgba(0, 0, 0, 0.01);
+    font-family: Verdana, sans-serif;
+}
+
+.container {
+    width: 960px;
+    margin: 0 auto;
+    font-size: 100%;
+    line-height: 1.5
+}
+
+
+/*CLEAR FIX SOLLUTION*/
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+/**
+        demo css styling
+
+        Layout
+
+criteria:
+margin 10px between outer edges and boxes (r & b)
+margin: 10px between boxes (r & b)
+footer: 10px
+
+Calculation 
+960 = (lm lb lp + content + rp + rb + rm) + (lm lb lp + content + rp + rb + rm)
+960 = (10 + 0 + 0 + content + 0 + 0 + 0) + (10 + 0 + 0 + content + 0 + 0 + 0) + 10
+960 = 30 + 2*content
+960 - 30 = 2*content
+930/2 = content
+content = 465
+
+width
+960-10= 950 (middle part)
+950-20= 930 (total)
+930/2= 465 (two boxes)
+width=465px
+
+height
+220-10=210 (top)
+210-10=200 (bottom)
+height=200px
+
+-----
+
+default display of elements on your page is called "scaled"
+to get your element on the same line as something called flexbox to invoke flexbox use the rule:
+    display: flex;
+flexbox attemtps to place all elements within its specified container area on the same line
+flexbox will automatically adjust measurements to get all elemets to appear on the same line
+
+problem: I dont want all elements on the same line
+    i dont want all my measurments adjusted
+solution::afteruse flex-wrap: wrap;
+this will place as many elements as possible on a single row withouth adjusting the measurements
+of your element, and any leftover eleemtns will wrap to the following line with all elements have 
+displayed
+
+**/
+main{
+    background-color: lightgrey;
+    display: flex;
+}
+main > div{
+    height: 200px;
+    width: 465px;
+    margin: 10px 0px 10px 10px;
+}
+.red-paint{
+    background-color: red;
+    
+}
+.blue-paint{
+    background-color: blue;
+}
+footer{
+    background-color: lightgray;
+    height: 60px;
+    display: flex;
+}
+.black-paint{
+  background-color: black;
+  width: 960px;
+  height: 50px;
+  margin: 0px 10px 10px 10px;
+}
+p{
+    color: white;
+    font-weight: bold;
+    margin: 10px;
+}
