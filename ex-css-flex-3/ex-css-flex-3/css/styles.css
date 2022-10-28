@@ -27,24 +27,37 @@ main{
 	border-style: solid;
 	border-width: 2px;
 }
-main > div{
-	height: 200px;
-	width: 301px;
+.stacked{
+	height: 590px;
+	width: 386px;
+	margin: 10px 0px 10px 10px;
+}
+.colum{
+	height: 600px;
+	width: 155px;
 	margin: 10px 0px 10px 10px;
 }
 .redbox{
 	background-color: red;
 	border-style: solid;
 	border-width: 2px;
+	height: 600px;
+	width: 150px;
 
 }
 .bluebox{
 	background-color: blue;
 	border-style: solid;
 	border-width: 2px;
+	height: 293px;
+	width: 768px;
+	margin-bottom: 7px;
 }
 .yellowbox{
 	background-color: yellow;
 	border-style: solid;
 	border-width: 2px;
+	height: 293px;
+	width: 768px;
+	margin-top: 7px;
 }
